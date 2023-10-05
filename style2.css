@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+#menu ul {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+    list-style: none;
+}
+
+#menu ul li {
+    display: inline;
+}
+
+#menu ul li a {
+    padding: 35px 35px;
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#menu ul li a:hover {
+    color: #ff7300;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+section {
+    margin: 200px 200px; /* Margens superior e inferior de 200px, margens esquerda e direita de 200px */
+    text-align: justify; /* Alinhamento do texto justificado */
+}
+/* Cor e altura para o título h2 */
+h2 {
+    color: #ff7300;
+    height: 50px;
+}
+/*Tamanho da letra no parágrafo*/
+p {
+    font-size: 18px;
+}
+
+/* Estilos para o botão "Voltar" */
+.voltar {
+    font-weight: 700; /* Peso da fonte em negrito */
+    text-decoration: none; /* Remove sublinhado do link */
+    color: black; /* Cor do texto preta */
+    border-radius: 15px; /* Borda arredondada */
+    background-color: #ff7300; /* Cor de fundo laranja */
+    width: 100px; /* Largura do botão de 100px */
+    position: absolute; /* Posição absoluta para controle preciso */
+    bottom: 20px; /* Distância do fundo da página de 20px */
+    left: 90%; /* Posição à direita de 90% do contêiner pai */
+}
+/* Efeito de escala quando o mouse passa sobre o botão "Voltar" */
+.voltar:hover {
+    transform: scale(1.05); /* Aumenta a escala em 5% no hover */
+}
+
+/* Media query para telas menores */
+@media screen and (max-width: 768px) {
+    section {
+        margin: 100px 50px; /* Ajusta a margem para telas menores */
+    }
+
+    h2 {
+        font-size: 24px; /* Tamanho de fonte maior para h2 */
+    }
+
+    p {
+        font-size: 16px; /* Tamanho de fonte menor para p */
+    }
+
+    .voltar {
+        bottom: 10px; /* Ajusta a posição do botão para telas menores */
+    }
+}

@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+#menu ul {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+    list-style: none;
+}
+
+#menu ul li {
+    display: inline;
+}
+
+#menu ul li a {
+    padding: 35px 35px;
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#menu ul li a:hover {
+    color: #ff7300;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+section {
+    margin: 200px 200px;
+    text-align: justify; 
+}
+
+p {
+    font-size: 18px;
+}
+
+h2 {
+    color: #ff7300;
+    height: 50px;
+}
+/* Estilos para a seção de portfólio */
+.secaoportfolio p {
+    margin-bottom: 30px; /* Espaçamento inferior maior para os parágrafos na seção de portfólio */
+}
+/* Estilos para os links com classe "portfolio" */
+.portfolio {
+    background-color: #ff7300; /* Cor de fundo laranja */
+    text-decoration: none; /* Remove sublinhado do link */
+    padding: 10px 20px; /* Espaçamento interno do link */
+    color: #ffffff; /* Cor do texto branca */
+    border: #3f1859 1px solid; /* Borda sólida com cor específica */
+    border-radius: 15px; /* Borda arredondada */
+}
+
+.voltar {
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    border-radius: 15px;
+    background-color: #ff7300;
+    width: 100px;
+    position: absolute;
+    bottom: 20px; 
+    left: 90%; 
+}
+
+.voltar:hover {
+    transform: scale(1.05);
+}
+
+/* Media query para telas menores */
+@media screen and (max-width: 768px) {
+    #menu ul li a {
+        padding: 15px 15px; /* Reduz o espaço ao redor dos links do menu em telas menores */
+    }
+
+    section {
+        margin: 100px 20px; /* Ajusta a margem para telas menores */
+    }
+
+    p {
+        font-size: 16px; /* Reduz o tamanho da fonte do parágrafo em telas menores */
+    }
+
+    h2 {
+        font-size: 28px; /* Aumenta o tamanho da fonte do título h2 em telas menores */
+    }
+
+    .voltar {
+        bottom: 10px; /* Ajusta a posição do botão para telas menores */
+    }
+}

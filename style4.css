@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+#menu ul {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+    list-style: none;
+}
+
+#menu ul li {
+    display: inline;
+}
+
+#menu ul li a {
+    padding: 35px 35px;
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#menu ul li a:hover {
+    color: #ff7300;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+section {
+    display: flex; /* Usa o modelo de caixa flexível para o posicionamento */
+    align-items: center; /* Alinha verticalmente ao centro */
+    height: 600px; /* Define a altura da seção */
+    position: relative; /* Define a posição relativa para elementos filhos */
+}
+
+h2 {
+    color: #000000; /* Define a cor do título para preto */
+    height: 50px;
+}
+
+.container {
+    max-width: 330px; /* Define a largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    text-align: center; /* Centraliza o texto no contêiner */
+}
+
+form {
+    background-color: #ff7300; /* Define a cor de fundo do formulário para laranja */
+    height: auto; /* Define a altura automática do formulário */
+    padding: 50px; /* Define o preenchimento interno do formulário */
+    border-radius: 20px; /* Adiciona bordas arredondadas ao formulário */
+    display: flex;  /* Usa o modelo de caixa flexível para elementos internos */
+    justify-content: center; /* Centraliza os elementos internos horizontalmente */
+    flex-direction: column; /* Alinha elementos internos verticalmente */
+    gap: 10px; /* Define o espaçamento entre elementos internos */
+}
+
+form input,
+form textarea {
+    font-family: 'Poppins', sans-serif; /* Define a família de fontes para elementos de entrada */
+    width: 100%; /* Largura de 100% para elementos de entrada */
+    padding: 5px 10px; /* Define o preenchimento para elementos de entrada */
+    outline: 0; /* Remove a borda de foco */
+    border: 0; /* Remove a borda padrão */
+    border-radius: 15px; /* Adiciona bordas arredondadas */
+}
+
+form textarea {
+    height: 150px; /* Define a altura para o campo de texto */
+}
+
+.voltar {
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    border-radius: 15px;
+    background-color: #ff7300;
+    width: 100px;
+    position: fixed;
+    bottom: 20px; 
+    left: 90%; 
+}
+
+.voltar:hover,
+form .enviar:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s; /* Adiciona a transição de escala */
+}
+
+/* Media query para telas menores */
+@media screen and (max-width: 768px) {
+    section {
+        height: auto; /* Remove a altura fixa para se adaptar ao conteúdo em telas menores */
+    }
+
+    form {
+        padding: 20px; /* Reduz o preenchimento do formulário em telas menores */
+    }
+
+    .voltar {
+        bottom: 10px; /* Ajusta a posição do botão para telas menores */
+    }
+}
+

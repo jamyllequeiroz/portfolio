@@ -1,0 +1,73 @@
+@charset "UTF-8"; /* Declaração de codificação de caracteres */
+
+* { /* Estilos globais para todos os elementos */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body { /* Estilos para o corpo da página */
+    background-color: #000000; /* Cor de fundo preta */
+    color: #ffffff; /* Cor do texto branca */
+    font-family: 'Poppins', sans-serif; /* Fonte principal */
+    text-align: center; /* Centraliza o texto */
+}
+/* Estilos para a navegação do menu */
+#menu ul {
+    font-weight: bold; /* Peso da fonte em negrito */
+    font-size: 18px; /* Tamanho da fonte */
+    margin: 0; /* Remove margens padrão */
+    list-style: none; /* Remove marcadores de lista */
+}
+/* Estilos para cada item do menu */
+#menu ul li {
+    display: inline; /* Exibe os itens do menu em linha */
+}
+/* Estilos para os links no menu */
+#menu ul li a {
+    padding: 35px 35px; /* Espaçamento interno nos links */
+    display: inline-block; /* Transforma os links em blocos em linha */
+    color: #ffffff; /* Cor do texto branca */
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+/* Estilos para os links no menu quando passar o mouse */
+#menu ul li a:hover {
+    color: #ff7300; /* Cor do texto laranja ao passar o mouse */
+    transform: scale(1.05); /* Efeito de escala sutil */
+    transition: 0.2s; /* Transição suave de 0.2 segundos */
+}
+/* Estilo para a imagem */
+img {
+    border-radius: 50%; /* Borda arredondada */
+    border: #ff7300 3px solid; /* Borda laranja */
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Redimensiona a imagem mantendo a proporção */
+    margin-bottom: 20px;
+}
+/* Estilos para a seção principal */
+section {
+    text-align: center; /* Centraliza o conteúdo */
+    margin-top: 120px;
+}
+
+/* Media query para telas menores */
+@media screen and (max-width: 768px) {
+    #menu ul {
+        font-size: 16px; /* Tamanho da fonte menor */
+    }
+
+    #menu ul li a {
+        padding: 20px 20px; /* Menos espaço ao redor dos links do menu */
+    }
+
+    img {
+        width: 150px; /* Tamanho menor para a imagem */
+        height: 150px;
+    }
+
+    section {
+        margin-top: 80px; /* Margem superior menor */
+    }
+}
